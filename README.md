@@ -1,6 +1,6 @@
-# Angular Stencil
+# Kazzie App
 
-Starter template for Angular
+Web App to Track your Goals
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 

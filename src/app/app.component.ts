@@ -7,5 +7,5 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   faCode = faCode;
-  title = 'Angular Stencil';
+  title = 'Kazzie App';
 }
