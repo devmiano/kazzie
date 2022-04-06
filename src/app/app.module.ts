@@ -11,6 +11,7 @@ import { faTrash as fasTrash } from '@fortawesome/free-solid-svg-icons';
 import { GoalComponent } from './components/goal/goal.component';
 import { GoalDetailComponent } from './components/goal-detail/goal-detail.component';
 import { ButtonComponent } from './components/button/button.component';
+import { StrikethroughDirective } from './directives/strikethrough.directive';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ButtonComponent } from './components/button/button.component';
     GoalComponent,
     GoalDetailComponent,
     ButtonComponent,
+    StrikethroughDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
