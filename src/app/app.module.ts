@@ -12,6 +12,7 @@ import { GoalComponent } from './components/goal/goal.component';
 import { GoalDetailComponent } from './components/goal-detail/goal-detail.component';
 import { ButtonComponent } from './components/button/button.component';
 import { StrikethroughDirective } from './directives/strikethrough.directive';
+import { DateCountPipe } from './pipes/date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { StrikethroughDirective } from './directives/strikethrough.directive';
     GoalDetailComponent,
     ButtonComponent,
     StrikethroughDirective,
+    DateCountPipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],

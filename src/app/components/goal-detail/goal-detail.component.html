@@ -1,5 +1,9 @@
-<div class="goal-detail">
-  <p>{{ goal.description }}</p>
+<div class="goal-details">
+  <div class="detail-text">
+    <p>{{ goal.description }}</p>
+    <p class="detail-date">Due in {{ goal.completeDate | dateCount }} days</p>
+  </div>
+
   <fa-icon
     class="delete"
     (click)="goalComplete(true)"

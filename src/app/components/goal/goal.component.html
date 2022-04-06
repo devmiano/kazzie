@@ -4,12 +4,12 @@
     hio kazi lakini usipangwe aisee!! - {{ goals.length }} Goals
   </p>
   <div class="goal" *ngFor="let goal of goals; let i = index">
-    <p class="goal-title" appStrikethrough>
+    <div class="goal-title" appStrikethrough>
       {{ goal.name }}
-      <span class="goal-title-span"
-        >DUE {{ goal.completeDate | date | uppercase }}</span
-      >
-    </p>
+      <p class="goal-title-span" appStrikethrough>
+        DUE {{ goal.completeDate | date | uppercase }}
+      </p>
+    </div>
     <app-goal-detail
       *ngIf="goal.showDescription"
       [goal]="goal"
