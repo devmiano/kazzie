@@ -42,7 +42,7 @@
 
 // App Container
 @mixin app {
-  max-width: 1400px;
+  max-width: 800px;
   margin: 0 auto;
   overflow: auto;
 }
@@ -164,4 +164,20 @@
   font-size: 1.6rem;
   font-weight: 400;
   letter-spacing: 0.04rem;
+}
+
+@mixin icon {
+  border-radius: 45rem;
+  font-size: 1rem;
+  margin: 0.25rem;
+  padding: 0.5rem 0.85rem;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transform: scale(1.08);
+  }
 }

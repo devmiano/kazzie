@@ -1,0 +1,31 @@
+@use "../../../styles/base";
+@use "../../../styles/mixins";
+
+.goals {
+  @include mixins.col-between;
+  width: 100%;
+
+  .goal {
+    background-color: base.$light-200;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    height: auto;
+    width: 80%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: base.$light-300;
+    }
+
+    .goal-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.05rem;
+    }
+
+    .goal-btn {
+      float: right;
+    }
+  }
+}

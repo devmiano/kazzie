@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Goal } from 'src/app/classes/goal';
 
 @Component({
@@ -8,6 +8,11 @@ import { Goal } from 'src/app/classes/goal';
 })
 export class GoalDetailComponent implements OnInit {
   @Input() goal!: Goal;
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  goalComplete(complete: boolean): void {
+    this.isComplete.emit(complete);
+  }
 
   constructor() {}
 

@@ -1,14 +1,19 @@
-<ul>
-  <div *ngFor="let goal of goals; let i = index">
-    <li>{{ goal.name }}</li>
-    <app-button (click)="toggleDetails(i)" text="Toggle"></app-button>
+<div class="goals">
+  <p *ngIf="goals.length > 2">
+    Hizo Kazzie ni mob kijana na sioni <br />
+    hio kazi lakini usipangwe aisee!! - {{ goals.length }} Goals
+  </p>
+  <div class="goal" *ngFor="let goal of goals; let i = index">
+    <p class="goal-title">{{ goal.name }}</p>
     <app-goal-detail
       *ngIf="goal.showDescription"
       [goal]="goal"
+      (isComplete)="completeGoal($event, i)"
     ></app-goal-detail>
+    <app-button
+      class="goal-btn"
+      (click)="toggleDetails(i)"
+      text="Toggle"
+    ></app-button>
   </div>
-</ul>
-<p *ngIf="goals.length > 2">
-  Hizo Kazzie ni mob kijana na sioni <br />
-  hio kazi lakini usipangwe aisee!! - {{ goals.length }} Goals
-</p>
+</div>

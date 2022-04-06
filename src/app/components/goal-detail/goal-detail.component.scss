@@ -1,0 +1,13 @@
+@use "../../../styles/base";
+@use "../../../styles/mixins";
+
+.goal-detail {
+  @include mixins.row-between;
+  align-items: flex-start;
+  margin: 1rem 0;
+  .delete {
+    @include mixins.icon;
+    background-color: base.$light-500;
+    color: base.$light-100;
+  }
+}
