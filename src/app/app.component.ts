@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { Goal } from './classes/goal';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  faCode = faCode;
-  title = 'Kazzie App';
+  goals: Goal[] = [
+    { id: 1, name: 'Eat' },
+    { id: 2, name: 'Play' },
+    { id: 3, name: 'Sleep' },
+  ];
 }

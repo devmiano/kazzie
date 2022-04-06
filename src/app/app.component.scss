@@ -3,5 +3,5 @@
 
 .app {
   @include mixins.app;
-  @include mixins.center;
+  @include mixins.col-between;
 }
