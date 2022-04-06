@@ -7,7 +7,7 @@
   margin: 1rem 0;
   .delete {
     @include mixins.icon;
-    background-color: base.$light-500;
+    background-color: base.$accent-100;
     color: base.$light-100;
   }
 }

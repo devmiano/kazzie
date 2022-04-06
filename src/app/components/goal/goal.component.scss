@@ -15,13 +15,19 @@
     cursor: pointer;
 
     &:hover {
-      background-color: base.$light-300;
+      background-color: base.$accent-400;
     }
 
     .goal-title {
       font-size: 1.1rem;
       font-weight: 600;
       letter-spacing: 0.05rem;
+
+      .goal-title-span {
+        font-size: 0.9rem;
+        float: right;
+        letter-spacing: normal;
+      }
     }
 
     .goal-btn {

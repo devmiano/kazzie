@@ -11,17 +11,20 @@ export class GoalComponent implements OnInit {
     new Goal(
       1,
       'Eat',
-      'To make the parent component receive this event, we need to catch the event being emitted in the parent component and define a function that will be triggered once this event is captured. '
+      'To make the parent component receive this event, we need to catch the event being emitted in the parent component and define a function that will be triggered once this event is captured. ',
+      new Date(2022, 3, 10)
     ),
     new Goal(
       2,
       'Play',
-      'To make the parent component receive this event, we need to catch the event being emitted in the parent component and define a function that will be triggered once this event is captured. '
+      'To make the parent component receive this event, we need to catch the event being emitted in the parent component and define a function that will be triggered once this event is captured. ',
+      new Date(2022, 3, 13)
     ),
     new Goal(
       3,
       'Sleep',
-      'To make the parent component receive this event, we need to catch the event being emitted in the parent component and define a function that will be triggered once this event is captured. '
+      'To make the parent component receive this event, we need to catch the event being emitted in the parent component and define a function that will be triggered once this event is captured. ',
+      new Date(2022, 3, 17)
     ),
   ];
 
