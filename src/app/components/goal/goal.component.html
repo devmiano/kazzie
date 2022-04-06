@@ -1,7 +1,7 @@
 <ul>
   <div *ngFor="let goal of goals; let i = index">
     <li>{{ goal.name }}</li>
-    <app-button (click)="toggleDetails(i)" text="Toggle Details"></app-button>
+    <app-button (click)="toggleDetails(i)" text="Toggle"></app-button>
     <app-goal-detail
       *ngIf="goal.showDescription"
       [goal]="goal"
@@ -9,5 +9,6 @@
   </div>
 </ul>
 <p *ngIf="goals.length > 2">
-  Hizo kazi ni mob kijana usipangwe aisee!! - {{ goals.length }}
+  Hizo Kazzie ni mob kijana na sioni <br />
+  hio kazi lakini usipangwe aisee!! - {{ goals.length }} Goals
 </p>
