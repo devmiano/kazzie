@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let goal of goals">
+    <p>{{ goal.name }}</p>
+    <app-goal-detail [goal]="goal"></app-goal-detail>
+  </li>
+</ul>
+<p *ngIf="goals.length > 2">
+  Hizo kazi ni mob kijana usipangwe!! - {{ goals.length }}
+</p>

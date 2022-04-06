@@ -1,9 +1,4 @@
 <div class="app">
   <h1>My Goals</h1>
-  <ul>
-    <li *ngFor="let goal of goals">
-      <p>{{ goal.name }}</p>
-    </li>
-  </ul>
-  <p *ngIf="goals.length > 2">Your goals are too many - {{ goals.length }}</p>
+  <app-goal></app-goal>
 </div>
