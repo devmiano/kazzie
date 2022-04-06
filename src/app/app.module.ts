@@ -10,9 +10,10 @@ import { faFaceLaughBeam as farBeam } from '@fortawesome/free-regular-svg-icons'
 import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons';
 import { GoalComponent } from './components/goal/goal.component';
 import { GoalDetailComponent } from './components/goal-detail/goal-detail.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
-  declarations: [AppComponent, GoalComponent, GoalDetailComponent],
+  declarations: [AppComponent, GoalComponent, GoalDetailComponent, ButtonComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

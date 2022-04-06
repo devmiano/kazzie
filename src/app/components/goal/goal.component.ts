@@ -8,10 +8,14 @@ import { Goal } from '../../classes/goal';
 })
 export class GoalComponent implements OnInit {
   goals: Goal[] = [
-    { id: 1, name: 'Eat', description: 'Kukula' },
-    { id: 2, name: 'Play', description: 'Kucheza' },
-    { id: 3, name: 'Sleep', description: 'Kulala' },
+    new Goal(1, 'Eat', 'Kukula'),
+    new Goal(2, 'Play', 'Kucheza'),
+    new Goal(3, 'Sleep', 'Kulala'),
   ];
+
+  toggleDetails(index: number): void {
+    this.goals[index].showDescription = !this.goals[index].showDescription;
+  }
 
   constructor() {}
 

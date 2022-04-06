@@ -1,8 +1,12 @@
 <ul>
-  <li *ngFor="let goal of goals">
-    <p>{{ goal.name }}</p>
-    <app-goal-detail [goal]="goal"></app-goal-detail>
-  </li>
+  <div *ngFor="let goal of goals; let i = index">
+    <li>{{ goal.name }}</li>
+    <app-button (click)="toggleDetails(i)" text="Toggle Details"></app-button>
+    <app-goal-detail
+      *ngIf="goal.showDescription"
+      [goal]="goal"
+    ></app-goal-detail>
+  </div>
 </ul>
 <p *ngIf="goals.length > 2">
   Hizo kazi ni mob kijana usipangwe!! - {{ goals.length }}

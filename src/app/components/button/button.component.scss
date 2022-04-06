@@ -1,0 +1,9 @@
+@use "../../../styles/base";
+@use "../../../styles/mixins";
+
+.btn {
+  @include mixins.btn;
+  background-color: base.$dark-300;
+  color: base.$light-100;
+  font-size: 00.8rem;
+}
