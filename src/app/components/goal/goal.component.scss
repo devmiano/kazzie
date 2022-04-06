@@ -16,6 +16,7 @@
 
     &:hover {
       background-color: base.$accent-400;
+      box-shadow: 0 0 17px 4px rgba(0, 6, 16, 0.1);
     }
 
     .goal-title {

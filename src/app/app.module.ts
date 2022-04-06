@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 import {
   FaIconLibrary,
   FontAwesomeModule,
@@ -13,6 +14,7 @@ import { GoalDetailComponent } from './components/goal-detail/goal-detail.compon
 import { ButtonComponent } from './components/button/button.component';
 import { StrikethroughDirective } from './directives/strikethrough.directive';
 import { DateCountPipe } from './pipes/date-count.pipe';
+import { GoalFormComponent } from './components/goal-form/goal-form.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,9 @@ import { DateCountPipe } from './pipes/date-count.pipe';
     ButtonComponent,
     StrikethroughDirective,
     DateCountPipe,
+    GoalFormComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

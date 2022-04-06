@@ -1,7 +1,9 @@
 <div class="goal-details">
   <div class="detail-text">
     <p>{{ goal.description }}</p>
-    <p class="detail-date">Due in {{ goal.completeDate | dateCount }} days</p>
+    <p class="detail-date">
+      Due in {{ goal.completeDate | dateCount | number: "1.0-0" }} days
+    </p>
   </div>
 
   <fa-icon

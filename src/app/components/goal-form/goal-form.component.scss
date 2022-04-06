@@ -1,0 +1,51 @@
+@use "../../../styles/base";
+@use "../../../styles/mixins";
+
+.goal-form {
+  @include mixins.col-between;
+  width: 100%;
+  .form {
+    background-color: base.$light-200;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    height: auto;
+    width: 80%;
+
+    .form-group {
+      @include mixins.col-between;
+      align-items: flex-start;
+      padding: 1rem 0;
+      .label {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        margin-bottom: 0.5rem;
+        color: base.$dark-400;
+      }
+      .input {
+        @include mixins.input;
+        width: 100%;
+        color: base.$dark-400;
+        background-color: base.$light-100;
+
+        &:focus {
+          outline: none;
+          color: base.$dark-400;
+          border-bottom: 5px solid base.$light-500;
+        }
+        &:after {
+          background-color: base.$light-100;
+        }
+      }
+      .error {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0.5rem 1rem;
+        color: base.$light-100;
+        background-color: base.$accent-100;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+}
