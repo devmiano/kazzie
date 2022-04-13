@@ -5,6 +5,14 @@
   @include mixins.col-between;
   width: 100%;
 
+  .blockquote {
+    width: 80%;
+    text-align: center;
+    cite {
+      font-weight: 600;
+    }
+  }
+
   .goal {
     background-color: base.$light-200;
     margin: 1rem 0;

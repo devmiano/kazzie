@@ -2,12 +2,18 @@
   (addGoal)="addNewGoal($event)"
   class="app-goal-form"
 ></app-goal-form>
+
 <div class="goals">
   <h2 class="app-subtitle">My Goals</h2>
+  <blockquote class="blockquote">
+    <p>{{ quote.quote }}</p>
+    <cite> {{ quote.author }} </cite>
+  </blockquote>
   <p *ngIf="goals.length > 5">
     Hizo Kazzie ni mob kijana!! <br />
     - {{ goals.length }} Goals
   </p>
+
   <div class="goal" *ngFor="let goal of goals; let i = index">
     <div class="goal-title" appStrikethrough>
       {{ goal.name }}
