@@ -6,8 +6,8 @@
 <div class="goals">
   <h2 class="app-subtitle">My Goals</h2>
   <blockquote class="blockquote">
-    <p>{{ quote.quote }}</p>
-    <cite> {{ quote.author }} </cite>
+    <p>{{ quote?.quote }}</p>
+    <cite> {{ quote?.author }} </cite>
   </blockquote>
   <p *ngIf="goals.length > 5">
     Hizo Kazzie ni mob kijana!! <br />

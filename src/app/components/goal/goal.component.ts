@@ -13,7 +13,7 @@ import { Quote } from '../../classes/quote/quote';
 export class GoalComponent implements OnInit {
   goals: Goal[];
   alertService: AlertService;
-  quote!: Quote;
+  quote?: Quote;
 
   toggleDetails(index: number): void {
     this.goals[index].showDescription = !this.goals[index].showDescription;
@@ -54,9 +54,12 @@ export class GoalComponent implements OnInit {
 
     this.http
       .get<ApiResponse>('http://quotes.stormconsultancy.co.uk/random.json')
-      .subscribe((data) => {
-        // Successful response for API request
-        this.quote = new Quote(data.author, data.quote);
+      .subscribe({
+        next: (data: any) => (this.quote = new Quote(data.author, data.quote)),
+        error: (err: any) =>
+          (this.quote =
+            new Quote('Winston Churchill', 'Never never give up!') ||
+            console.log(err)),
       });
   }
 }
