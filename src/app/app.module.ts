@@ -16,6 +16,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { StrikethroughDirective } from './directives/strikethrough.directive';
 import { DateCountPipe } from './pipes/date-count.pipe';
 import { GoalFormComponent } from './components/goal-form/goal-form.component';
+import { NgProgressModule } from 'ngx-progressbar';
+import { NgProgressHttpModule } from 'ngx-progressbar/http';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { GoalFormComponent } from './components/goal-form/goal-form.component';
     FontAwesomeModule,
     FormsModule,
     HttpClientModule,
+    NgProgressModule,
+    NgProgressHttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

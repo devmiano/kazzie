@@ -6213,6 +6213,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ngx-progressbar@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "ngx-progressbar@npm:8.0.0"
+  dependencies:
+    tslib: ^2.0.0
+  peerDependencies:
+    "@angular/common": ">=13.0.0"
+    "@angular/core": ">=13.0.0"
+    "@angular/router": ">=13.0.0"
+    rxjs: ">=6.0.0"
+  checksum: c643dfb83be9eb40726768dff8e05017b84e5571a39eaeb5e8b7b9fc34c1ffc87ce5e101df5390bde23c1f8128128deb0b018c180dac5d267d27e4006e6e20b9
+  languageName: node
+  linkType: hard
+
 "nice-napi@npm:^1.0.2":
   version: 1.0.2
   resolution: "nice-napi@npm:1.0.2"
@@ -8196,6 +8210,7 @@ __metadata:
     karma-coverage: ~2.1.0
     karma-jasmine: ~4.0.0
     karma-jasmine-html-reporter: ~1.7.0
+    ngx-progressbar: ^8.0.0
     rxjs: ~7.5.0
     tslib: ^2.3.0
     typescript: ~4.6.2
@@ -8510,7 +8525,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:2.3.1, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.3.1":
+"tslib@npm:2.3.1, tslib@npm:^2.0.0, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.3.1":
   version: 2.3.1
   resolution: "tslib@npm:2.3.1"
   checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9
